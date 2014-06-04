@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app>
+    <head>
+            <script src="../js/angular.js"></script>
+            <script src="../js/angularjsTest.js"></script>
+    </head>
+  
+	<body ng-controller="MainCtrl">
+		<p>Good {{timeOfDay}}, {{name}}!</p>
+		<div ng-controller="ChildCtrl">
+			<p>Good {{timeOfDay}}, {{name}}!</p>
+			<p ng-controller="BabyCtrl">Good {{timeOfDay}}, {{name}}!</p>
+	    </div>
+	</body>
+</html>
